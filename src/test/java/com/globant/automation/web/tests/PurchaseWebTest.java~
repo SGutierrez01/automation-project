@@ -40,7 +40,7 @@ public class PurchaseWebTest extends BaseWebTest {
     CheckoutCompletePage completePage = overviewPage.clickFinish();
     String message = completePage.getCompleteMessage();
 
-    Assert.assertEquals(message, "Thank you for your order!!!", "Message does not match.");
+    Assert.assertEquals(message, "Thank you for your order!", "Message does not match.");
   }
 }
 
