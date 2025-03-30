@@ -1,0 +1,14 @@
+package com.globant.automation.core.hooks;
+
+public class Hooks {
+
+  @BeforeSuite
+  public void cleanAllureResultsDir() {
+    File resultsDir = new File("allure-results");
+    if (resultsDir.exists()) {
+      for (File file : Objects.requireNonNull(resultsDir.listFiles())) {
+        file.delete();
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+package com.globant.automation.web.tasks;
+
+import com.globant.automation.web.pages.ProductsPage;
+
+import static com.globant.automation.core.utils.TestContextManager.getTestContext;
+import static com.globant.automation.web.utils.PageActions.click;
+import static com.globant.automation.web.utils.enums.ElementDescriptions.ADD_TO_CART;
+import static com.globant.automation.web.utils.enums.ElementDescriptions.ADD_TO_CART_BUTTON;
+import static com.globant.automation.web.utils.enums.Keys.ITEM_NAME;
+
+public class ProductsTasks extends ProductsPage {
+
+  public void addCheapestProductToCart() {
+    double cheapestPrice = Double.MAX_VALUE;
+    int cheapestIndex = -1;
+
+    for (int i = 0; i < getPriceList().size(); i++) {
+      String priceText = getPriceList().get(i).getText().replace("$", "");
+      double price = Double.parseDouble(priceText);
+
+      if (price < cheapestPrice) {
+        cheapestPrice = price;
+        cheapestIndex = i;
+      }
+    }
+
+    if (cheapestIndex != -1) {
+      click(getAddToCartButtons().get(cheapestIndex), ADD_TO_CART_BUTTON.getValue());
+      getTestContext().set(ITEM_NAME.name(), getNameList().get(cheapestIndex).getText());
+    } else {
+      throw new RuntimeException("Not found any product to add to cart");
+    }
+  }
+
+  public void goToCartPage() {
+    click(getCartIcon(), "Cart Button");
+  }
+}

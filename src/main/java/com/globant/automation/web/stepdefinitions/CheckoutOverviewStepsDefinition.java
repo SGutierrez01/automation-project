@@ -1,0 +1,14 @@
+package com.globant.automation.web.stepdefinitions;
+
+import com.globant.automation.web.tasks.CheckoutOverviewTasks;
+import io.cucumber.java.en.And;
+
+public class CheckoutOverviewStepsDefinition {
+
+  private final CheckoutOverviewTasks checkoutOverviewTasks = new CheckoutOverviewTasks();
+
+  @And("I complete the purchase")
+  public void completeThePurchase() {
+    checkoutOverviewTasks.finishPurchase();
+  }
+}

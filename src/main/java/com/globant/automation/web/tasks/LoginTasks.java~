@@ -1,0 +1,32 @@
+package com.globant.automation.web.tasks;
+
+import com.globant.automation.web.pages.LoginPage;
+import com.globant.automation.web.utils.PropertiesUtils;
+
+import java.util.Properties;
+
+import static com.globant.automation.web.utils.PageActions.click;
+import static com.globant.automation.web.utils.PageActions.sendKeys;
+import static com.globant.automation.web.utils.enums.ElementDescriptions.LOGIN_BUTTON;
+import static com.globant.automation.web.utils.enums.ElementDescriptions.PASSWORD_INPUT;
+import static com.globant.automation.web.utils.enums.ElementDescriptions.USERNAME_INPUT;
+
+public class LoginTasks extends LoginPage {
+
+  public void openTheSauceDemoLoginPage() {
+    openPage(PropertiesUtils.getProperty("baseUrl"));
+  }
+
+  public void enterUsername(String username) {
+    sendKeys(getUserField(), username, USERNAME_INPUT.getValue());
+  }
+
+  public void enterPassword(String password) {
+    sendKeys(getPasswordField(), password, PASSWORD_INPUT.getValue());
+  }
+
+  public void clickLoginButton() {
+    click(getLoginButton(), LOGIN_BUTTON.getValue());
+  }
+}
+
