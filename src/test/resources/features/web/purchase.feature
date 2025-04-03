@@ -17,7 +17,7 @@ Feature: Purchase a product on SauceDemo
     And I fill in first name "<firstName>", last name "<lastName>", and postal code "<postalCode>"
     And I proceed to overview
     And I complete the purchase
-    Then I should see the message "Thank you for your order!!!"
+    Then I should see the message "Thank you for your order!"
 
     Examples:
       | username       | password      | firstName | lastName | postalCode |

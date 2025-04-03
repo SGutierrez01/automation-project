@@ -49,7 +49,7 @@ public abstract class BasePage {
 
   protected BasePage() {
     if (getDriver() == null) {
-      setDriver(createWebDriver(PropertiesUtils.getProperty("browser")));
+      setDriver(createWebDriver("chrome"));
     }
     PageFactory.initElements(getDriver(), this);
   }

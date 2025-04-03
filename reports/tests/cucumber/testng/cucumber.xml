@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testng-results failed="2" passed="11" skipped="0" total="13">
-    <suite duration-ms="10545" name="io.cucumber.core.plugin.TestNGFormatter">
-        <test duration-ms="10545" name="io.cucumber.core.plugin.TestNGFormatter">
+<testng-results failed="0" passed="13" skipped="0" total="13">
+    <suite duration-ms="9925" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="9925" name="io.cucumber.core.plugin.TestNGFormatter">
             <class name="Pokémon API search">
-                <test-method duration-ms="7260" finished-at="2025-03-26T19:28:34.025209006Z" name="Get Pokémon by valid name" started-at="2025-03-26T19:28:26.641052187Z" status="PASS"/>
-                <test-method duration-ms="7260" finished-at="2025-03-26T19:28:34.007955869Z" name="Get Pokémon by valid name_2" started-at="2025-03-26T19:28:26.641452231Z" status="PASS"/>
-                <test-method duration-ms="7235" finished-at="2025-03-26T19:28:34.025621546Z" name="Get Pokémon by valid name_3" started-at="2025-03-26T19:28:26.715704427Z" status="PASS"/>
-                <test-method duration-ms="4348" finished-at="2025-03-26T19:28:31.097324851Z" name="Get Pokémon by invalid name" started-at="2025-03-26T19:28:26.639500511Z" status="PASS"/>
-                <test-method duration-ms="4347" finished-at="2025-03-26T19:28:31.113790153Z" name="Get Pokémon by invalid name_2" started-at="2025-03-26T19:28:26.638969090Z" status="PASS"/>
-                <test-method duration-ms="4371" finished-at="2025-03-26T19:28:31.113315484Z" name="Get Pokémon by invalid name_3" started-at="2025-03-26T19:28:26.704810916Z" status="PASS"/>
-                <test-method duration-ms="5827" finished-at="2025-03-26T19:28:32.584550336Z" name="Validate response time for Pokémon endpoint" started-at="2025-03-26T19:28:26.704220798Z" status="PASS"/>
-                <test-method duration-ms="6271" finished-at="2025-03-26T19:28:33.010523172Z" name="Validate response time for Pokémon endpoint_2" started-at="2025-03-26T19:28:26.709529892Z" status="PASS"/>
-                <test-method duration-ms="6164" finished-at="2025-03-26T19:28:32.916677628Z" name="Validate response time for Pokémon endpoint_3" started-at="2025-03-26T19:28:26.694917560Z" status="PASS"/>
+                <test-method duration-ms="4385" finished-at="2025-03-31T14:46:16.614831400Z" name="Get Pokémon by valid name" started-at="2025-03-31T14:46:12.066777600Z" status="PASS"/>
+                <test-method duration-ms="4369" finished-at="2025-03-31T14:46:16.585592900Z" name="Get Pokémon by valid name_2" started-at="2025-03-31T14:46:12.070664500Z" status="PASS"/>
+                <test-method duration-ms="4375" finished-at="2025-03-31T14:46:16.602747400Z" name="Get Pokémon by valid name_3" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
+                <test-method duration-ms="3033" finished-at="2025-03-31T14:46:15.246683600Z" name="Get Pokémon by invalid name" started-at="2025-03-31T14:46:12.074852600Z" status="PASS"/>
+                <test-method duration-ms="3030" finished-at="2025-03-31T14:46:15.245659200Z" name="Get Pokémon by invalid name_2" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
+                <test-method duration-ms="3033" finished-at="2025-03-31T14:46:15.482170700Z" name="Get Pokémon by invalid name_3" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
+                <test-method duration-ms="3957" finished-at="2025-03-31T14:46:16.169381600Z" name="Validate response time for Pokémon endpoint" started-at="2025-03-31T14:46:12.067363600Z" status="PASS"/>
+                <test-method duration-ms="3969" finished-at="2025-03-31T14:46:16.200536300Z" name="Validate response time for Pokémon endpoint_2" started-at="2025-03-31T14:46:12.070664500Z" status="PASS"/>
+                <test-method duration-ms="3948" finished-at="2025-03-31T14:46:16.169381600Z" name="Validate response time for Pokémon endpoint_3" started-at="2025-03-31T14:46:12.074852600Z" status="PASS"/>
             </class>
             <class name="Login to SauceDemo">
-                <test-method duration-ms="60" finished-at="2025-03-26T19:28:26.783710755Z" name="Successful login with valid user" started-at="2025-03-26T19:28:26.695818534Z" status="FAIL">
-                    <exception class="java.lang.IllegalArgumentException">
-                        <message><![CDATA[Given I open the SauceDemo login page.......................................skipped
-When I enter username "standard_user" and password "secret_sauce"...........skipped
-And I click the login button................................................skipped
-Then I should be redirected to the inventory page...........................skipped
-]]></message>
-                        <full-stacktrace><![CDATA[java.lang.IllegalArgumentException: Property 'browser' is not defined in config.properties
-	at com.globant.automation.web.utils.PropertiesUtils.getProperty(PropertiesUtils.java:31)
-	at com.globant.automation.web.hooks.Hooks.setUpWebDriver(Hooks.java:36)
-]]></full-stacktrace>
-                    </exception>
-                </test-method>
-                <test-method duration-ms="4152" finished-at="2025-03-26T19:28:31.158018034Z" name="Login with locked out user" started-at="2025-03-26T19:28:26.989097788Z" status="PASS"/>
-                <test-method duration-ms="2206" finished-at="2025-03-26T19:28:33.383588376Z" name="Login with invalid credentials" started-at="2025-03-26T19:28:31.145976715Z" status="PASS"/>
+                <test-method duration-ms="3204" finished-at="2025-03-31T14:46:15.460776700Z" name="Successful login with valid user" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
+                <test-method duration-ms="6030" finished-at="2025-03-31T14:46:21.541101200Z" name="Login with locked out user" started-at="2025-03-31T14:46:15.499325500Z" status="PASS"/>
+                <test-method duration-ms="4625" finished-at="2025-03-31T14:46:20.134598700Z" name="Login with invalid credentials" started-at="2025-03-31T14:46:15.496331Z" status="PASS"/>
             </class>
             <class name="Purchase a product on SauceDemo">
-                <test-method duration-ms="5169" finished-at="2025-03-26T19:28:36.341512580Z" name="Complete purchase flow with valid client data" started-at="2025-03-26T19:28:31.146611272Z" status="FAIL">
-                    <exception class="java.lang.AssertionError">
-                        <message><![CDATA[Given I open the SauceDemo login page.......................................passed
-And I am logged in as "standard_user" with password "secret_sauce"..........passed
-When I add the cheapest product to the cart.................................passed
-And I open the cart.........................................................passed
-Then I should see the cheapest product......................................passed
-And I proceed to checkout...................................................passed
-And I fill in first name "John", last name "Doe", and postal code "12345"...passed
-And I proceed to overview...................................................passed
-And I complete the purchase.................................................passed
-Then I should see the message "Thank you for your order!!!".................failed
-]]></message>
-                        <full-stacktrace><![CDATA[java.lang.AssertionError: Message does not match. expected [Thank you for your order!!!] but found [Thank you for your order!]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.globant.automation.web.questions.CheckoutCompleteQuestions.shouldSeeTheMessage(CheckoutCompleteQuestions.java:9)
-	at com.globant.automation.web.stepdefinitions.CheckoutCompleteStepsDefinition.shouldSeeTheMessage(CheckoutCompleteStepsDefinition.java:12)
-	at ✽.I should see the message "Thank you for your order!!!"(file:///mnt/c/Users/santiago.gutierrez01/Documents/repos/globant/globant-training-repos/automation-project/src/test/resources/features/web/purchase.feature:20)
-]]></full-stacktrace>
-                    </exception>
-                </test-method>
+                <test-method duration-ms="3156" finished-at="2025-03-31T14:46:18.678259600Z" name="Complete purchase flow with valid client data" started-at="2025-03-31T14:46:15.499325500Z" status="PASS"/>
             </class>
         </test>
     </suite>

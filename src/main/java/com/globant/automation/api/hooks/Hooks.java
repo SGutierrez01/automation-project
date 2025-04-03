@@ -25,7 +25,7 @@ public class Hooks {
     log.info("[API] Starting scenario: {}", scenario.getName());
     // Load config and set baseURI for RestAssured
     PropertiesUtils.loadProperties();
-    RestAssured.baseURI = PropertiesUtils.getProperty("apiUrl");
+    RestAssured.baseURI = "https://pokeapi.co/api/v2/pokemon";
     log.info("[API] Base URI set to: {}", RestAssured.baseURI);
   }
 

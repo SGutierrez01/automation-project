@@ -39,6 +39,10 @@ build/
 
 ### Allure ###
 allure-results
+allure-report
+remoting
+tools
+reports
 
 ### Logs ###
 logs

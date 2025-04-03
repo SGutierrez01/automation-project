@@ -47,7 +47,7 @@ public abstract class BasePage {
 
   protected WebDriverWait wait;
 
-  public BasePage() {
+  protected BasePage() {
     if (getDriver() == null) {
       setDriver(createWebDriver(PropertiesUtils.getProperty("browser")));
     }

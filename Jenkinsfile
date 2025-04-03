@@ -1,32 +1,49 @@
 pipeline {
-  agent any
-
-  tools {
-    maven 'Maven 3.9.6'
-    jdk 'Temurin-17'
-  }
-
-  environment {
-    ALLURE_RESULTS = 'allure-results'
-  }
-
-  stages {
-    stage('Build') {
-      steps {
-        sh 'mvn clean compile'
-      }
+    agent {
+        label 'my-windows'
     }
 
-    stage('Test') {
-      steps {
-        sh 'mvn test'
-      }
+    options {
+        ws('C:\\Users\\santiago.gutierrez01\\Documents\\repos\\globant\\globant-training-repos\\automation-project')
     }
 
-    stage('Allure Report') {
-      steps {
-        allure includeProperties: false, results: [[path: "${ALLURE_RESULTS}"]]
-      }
+    tools {
+        maven 'Maven 3.9.6'
+        jdk 'Temurin-17'
+        allure 'AllureCommandline'
     }
-  }
+
+    environment {
+        ALLURE_RESULTS = 'allure-results'
+        REPORT_DIR = '.\\allure-report'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'mvn test'
+            }
+        }
+
+        stage('Generate Allure Report') {
+            steps {
+                bat "allure generate ${ALLURE_RESULTS} --clean -o ${REPORT_DIR}"
+            }
+        }
+
+        stage('Publish Allure Report') {
+            steps {
+                allure([
+                    includeProperties: false,
+                    results: [[path: ALLURE_RESULTS]]
+                ])
+            }
+        }
+    }
 }
