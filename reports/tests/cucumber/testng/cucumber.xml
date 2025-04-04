@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testng-results failed="0" passed="13" skipped="0" total="13">
-    <suite duration-ms="9925" name="io.cucumber.core.plugin.TestNGFormatter">
-        <test duration-ms="9925" name="io.cucumber.core.plugin.TestNGFormatter">
+    <suite duration-ms="12623" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="12623" name="io.cucumber.core.plugin.TestNGFormatter">
             <class name="Pokémon API search">
-                <test-method duration-ms="4385" finished-at="2025-03-31T14:46:16.614831400Z" name="Get Pokémon by valid name" started-at="2025-03-31T14:46:12.066777600Z" status="PASS"/>
-                <test-method duration-ms="4369" finished-at="2025-03-31T14:46:16.585592900Z" name="Get Pokémon by valid name_2" started-at="2025-03-31T14:46:12.070664500Z" status="PASS"/>
-                <test-method duration-ms="4375" finished-at="2025-03-31T14:46:16.602747400Z" name="Get Pokémon by valid name_3" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
-                <test-method duration-ms="3033" finished-at="2025-03-31T14:46:15.246683600Z" name="Get Pokémon by invalid name" started-at="2025-03-31T14:46:12.074852600Z" status="PASS"/>
-                <test-method duration-ms="3030" finished-at="2025-03-31T14:46:15.245659200Z" name="Get Pokémon by invalid name_2" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
-                <test-method duration-ms="3033" finished-at="2025-03-31T14:46:15.482170700Z" name="Get Pokémon by invalid name_3" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
-                <test-method duration-ms="3957" finished-at="2025-03-31T14:46:16.169381600Z" name="Validate response time for Pokémon endpoint" started-at="2025-03-31T14:46:12.067363600Z" status="PASS"/>
-                <test-method duration-ms="3969" finished-at="2025-03-31T14:46:16.200536300Z" name="Validate response time for Pokémon endpoint_2" started-at="2025-03-31T14:46:12.070664500Z" status="PASS"/>
-                <test-method duration-ms="3948" finished-at="2025-03-31T14:46:16.169381600Z" name="Validate response time for Pokémon endpoint_3" started-at="2025-03-31T14:46:12.074852600Z" status="PASS"/>
+                <test-method duration-ms="2872" finished-at="2025-04-04T14:15:43.475368400Z" name="Get Pokémon by valid name" started-at="2025-04-04T14:15:40.494075400Z" status="PASS"/>
+                <test-method duration-ms="2886" finished-at="2025-04-04T14:15:43.484844700Z" name="Get Pokémon by valid name_2" started-at="2025-04-04T14:15:40.497072Z" status="PASS"/>
+                <test-method duration-ms="2893" finished-at="2025-04-04T14:15:43.484490600Z" name="Get Pokémon by valid name_3" started-at="2025-04-04T14:15:40.497072Z" status="PASS"/>
+                <test-method duration-ms="2148" finished-at="2025-04-04T14:15:42.755570900Z" name="Get Pokémon by invalid name" started-at="2025-04-04T14:15:40.496072700Z" status="PASS"/>
+                <test-method duration-ms="2145" finished-at="2025-04-04T14:15:42.755570900Z" name="Get Pokémon by invalid name_2" started-at="2025-04-04T14:15:40.576562300Z" status="PASS"/>
+                <test-method duration-ms="2151" finished-at="2025-04-04T14:15:42.753483400Z" name="Get Pokémon by invalid name_3" started-at="2025-04-04T14:15:40.495072300Z" status="PASS"/>
+                <test-method duration-ms="2799" finished-at="2025-04-04T14:15:43.401480600Z" name="Validate response time for Pokémon endpoint" started-at="2025-04-04T14:15:40.496072700Z" status="PASS"/>
+                <test-method duration-ms="2933" finished-at="2025-04-04T14:15:43.529833500Z" name="Validate response time for Pokémon endpoint_2" started-at="2025-04-04T14:15:40.495072300Z" status="PASS"/>
+                <test-method duration-ms="2826" finished-at="2025-04-04T14:15:43.412976400Z" name="Validate response time for Pokémon endpoint_3" started-at="2025-04-04T14:15:40.497072Z" status="PASS"/>
             </class>
             <class name="Login to SauceDemo">
-                <test-method duration-ms="3204" finished-at="2025-03-31T14:46:15.460776700Z" name="Successful login with valid user" started-at="2025-03-31T14:46:12.073677Z" status="PASS"/>
-                <test-method duration-ms="6030" finished-at="2025-03-31T14:46:21.541101200Z" name="Login with locked out user" started-at="2025-03-31T14:46:15.499325500Z" status="PASS"/>
-                <test-method duration-ms="4625" finished-at="2025-03-31T14:46:20.134598700Z" name="Login with invalid credentials" started-at="2025-03-31T14:46:15.496331Z" status="PASS"/>
+                <test-method duration-ms="6736" finished-at="2025-04-04T14:15:47.335613500Z" name="Successful login with valid user" started-at="2025-04-04T14:15:40.493064Z" status="PASS"/>
+                <test-method duration-ms="4656" finished-at="2025-04-04T14:15:47.565728Z" name="Login with locked out user" started-at="2025-04-04T14:15:42.901600200Z" status="PASS"/>
+                <test-method duration-ms="7567" finished-at="2025-04-04T14:15:50.484511500Z" name="Login with invalid credentials" started-at="2025-04-04T14:15:42.910368100Z" status="PASS"/>
             </class>
             <class name="Purchase a product on SauceDemo">
-                <test-method duration-ms="3156" finished-at="2025-03-31T14:46:18.678259600Z" name="Complete purchase flow with valid client data" started-at="2025-03-31T14:46:15.499325500Z" status="PASS"/>
+                <test-method duration-ms="9769" finished-at="2025-04-04T14:15:52.685392700Z" name="Complete purchase flow with valid client data" started-at="2025-04-04T14:15:42.901071800Z" status="PASS"/>
             </class>
         </test>
     </suite>

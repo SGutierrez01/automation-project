@@ -33,7 +33,7 @@ public class Hooks {
   @Before(value = "@web", order = 0)
   public void setUpWebDriver(Scenario scenario) {
     log.info("[WEB] Starting scenario: {}", scenario.getName());
-    WebDriver driver = Browser.createWebDriver("edge");
+    WebDriver driver = Browser.createWebDriver("chrome");
     BasePage.setDriver(driver);
   }
 

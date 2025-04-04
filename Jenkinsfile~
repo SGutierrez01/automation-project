@@ -55,5 +55,5 @@ pipeline {
                     slackSend(channel: SLACK_CHANNEL, message: SLACK_MESSAGE)
                 }
             }
-    }
+        }
 }
